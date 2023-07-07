@@ -1,6 +1,7 @@
+import { Game } from "./Game";
 // Initialize and load, then start the main loop 
 document.addEventListener('DOMContentLoaded', function () {
-    var game = new Game();
-    window.requestAnimationFrame(function () { return game.mainLoop(); });
+    let game = new Game();
+    window.requestAnimationFrame(() => game.mainLoop());
 });
 //# sourceMappingURL=main.js.map

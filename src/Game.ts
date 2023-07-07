@@ -1,13 +1,15 @@
 //import { MAIN_CANVAS_ID } from "./gameconstants";
 //import { MS_PER_GAME_UPDATE } from "./gameconstants";
 
-class Game {
+export class Game {
     private msPreviousTime: number = performance.now();
     private msLagTime: number = 0;
     private quit: boolean = false;
 
     private updatedThisFrame: boolean = false;
     private ctx: CanvasRenderingContext2D = null;
+
+    private counter: number = 0;
 
     public constructor() {
         const canvas = <HTMLCanvasElement> document.getElementById(MAIN_CANVAS_ID);
@@ -60,6 +62,7 @@ class Game {
         this.ctx.clearRect(0, 0, 1920, 1080);
 
         this.ctx.fillStyle = "#FF0000";
+
         this.ctx.fillRect(0,0,100,200);
     }
 }
