@@ -47,7 +47,7 @@ export class Game {
     }
     render() {
         this.ctx.clearRect(0, 0, 1920, 1080);
-        this.ctx.fillStyle = "#FF0000";
+        this.ctx.fillStyle = "#0000FF";
         this.ctx.fillRect(0, 0, 100, 200);
     }
 }
