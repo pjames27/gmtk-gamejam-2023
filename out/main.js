@@ -49,10 +49,10 @@ function initInputHandlers() {
 ;
 function loadGraphics() {
     return __awaiter(this, void 0, void 0, function* () {
+        // Load all animations for all objects
         for (const animation of AllAnimations.animationList) {
             yield GraphicsStore.loadAnimation(animation.imgUrls, animation.msAnimTime, animation.name);
         }
-        //await GraphicsStore.loadImage('./../assets/images/cobblestone.png', 'cobble');
     });
 }
 ;

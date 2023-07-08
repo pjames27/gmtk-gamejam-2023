@@ -47,12 +47,12 @@ export class Game {
     render() {
         this.ctx.clearRect(0, 0, 1920, 1080);
         this.ctx.fillStyle = "#0000FF";
-        //this.ctx.font = "48px serif";
-        //this.ctx.fillText("Hello world", 100, 50);
+        this.ctx.font = "48px serif";
+        this.ctx.fillText("Hello world", 100, 50);
         //this.ctx.font = "12px serif";
         //this.ctx.fillText("Hello world", 200, 50);
         this.ctx.drawImage(GraphicsStore.getAnimation('testAnim').getFrameAtIndex(1), 400, 400, 60, 60);
-        this.ctx.fillRect(0, 0, 100, 200);
+        //this.ctx.fillRect(0,0,100,200);
     }
 }
 //# sourceMappingURL=Game.js.map
