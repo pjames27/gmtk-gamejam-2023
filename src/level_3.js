@@ -46,7 +46,7 @@ const mouseMoveHandler = function (e) {
 
 
     if(collide( ele, target)){
-        update_level(4);
+        set_level(4);
     }
 
 };

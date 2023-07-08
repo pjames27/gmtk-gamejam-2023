@@ -4,7 +4,7 @@ function check(){
     let c = document.getElementById("vehicle3");
 
     if( a.checked && b.checked && !c.checked){
-        update_level(3)
+        set_level(3)
     }else{
         alert("Wrong");
     }
