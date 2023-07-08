@@ -3,57 +3,13 @@
 <html>
 <head>
     <title>GMTK Game Jam 2023</title>
-    <!-- <meta http-equiv="refresh" content="1"> -->
     <script src="./jquery.min.js"></script>
+    <script src="./index.js"></script>
 </head>
 
 
 <body style="margin: 0px;">
     <div id="m" style="width:100%; aspect-ratio: 4 / 3; user-select: none;"></div>
-
- <!--    <div tabindex="0" id="main0"  style="background-color: powderblue; width:50%; aspect-ratio: 4 / 3;">  -->
- <!--    <button onclick="update_level(1)">Click me</button> -->
- <!-- </div> -->
- <!--    <div tabindex="0" id="main1"  style="background-color: powderblue; width:50%; aspect-ratio: 4 / 3;">  -->
- <!---->
- <!--    <button onclick="alert()">Not me</button> -->
- <!--    <button onclick="update_level(3)">Click me now</button> -->
- <!---->
- <!--        This is level 2 </div> -->
- <!--    <div tabindex="0" id="main2"  style="background-color: powderblue; width:50%; aspect-ratio: 4 / 3;"> level 3 </div> -->
- <!--    <div tabindex="0" id="main3"  style="background-color: powderblue; width:50%; aspect-ratio: 4 / 3;"> Tdfl 2 </div> -->
 </body>
-
-<script>
-    // const levels = [document.getElementById("main0"),
-        // document.getElementById("main1"),
-        // document.getElementById("main2"),
-                    // document.getElementById("main3")];
-
-
-    function update_level(level){
-        // for (let i = 0; i < levels.length; i++) { 
-                //if( i == level){
-                   //levels[i].hidden = false;
-                //}else{
-                   //levels[i].hidden = true;
-                //}
-              $(function() {
-                 $("#m").load(level+".html");
-              });
-
-
-        // }
-
-    }
-
-    function fail_level(){
-        document.getElementById("m").disabled = true;
-
-    }
-    update_level(0);
-
-</script>
-
 
 </html>
