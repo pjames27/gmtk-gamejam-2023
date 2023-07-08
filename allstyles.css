@@ -1,0 +1,7 @@
+#level_body {
+    width:100%;
+    aspect-ratio: 4 / 3;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
