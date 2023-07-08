@@ -1,7 +1,7 @@
 import { MAIN_CANVAS_ID } from "./gameconstants.js";
 import { MS_PER_GAME_UPDATE } from "./gameconstants.js";
 
-import { ImageStore } from "./utils/rendering/ImageStore.js";
+import { GraphicsStore } from "./utils/rendering/GraphicsStore.js";
 
 
 export class Game {
@@ -68,7 +68,7 @@ export class Game {
         //this.ctx.font = "12px serif";
         //this.ctx.fillText("Hello world", 200, 50);
 
-        this.ctx.drawImage(ImageStore.getImage('cobble'), 400, 400, 60, 60);
+        this.ctx.drawImage(GraphicsStore.getAnimation('testAnim').getFrameAtIndex(1), 400, 400, 60, 60);
 
         this.ctx.fillRect(0,0,100,200);
     }

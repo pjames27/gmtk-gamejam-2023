@@ -1,0 +1,12 @@
+GENERAL: 
+
+
+PRESTON:
+	Rendering: 
+	- Small layered renderer
+		- Queueing single images with their 
+	- GraphicsComponent
+		- Managing drawlayer
+		- Managing changing animation frames
+	- Clickable Components
+

@@ -1,0 +1,1 @@
+{"version":3,"file":"graphicsconfig.js","sourceRoot":"","sources":["../src/graphicsconfig.ts"],"names":[],"mappings":"AAIC,CAAC;AAGF,MAAM,CAAC,MAAM,aAAa,GAAuC;IAC7D,aAAa,EAAE;QACX;YACI,OAAO,EAAE,CAAC,iBAAiB,EAAE,qBAAqB,CAAC;YACnD,UAAU,EAAE,IAAI;YAChB,IAAI,EAAE,UAAU;SACnB;KACJ;CACJ,CAAC"}
