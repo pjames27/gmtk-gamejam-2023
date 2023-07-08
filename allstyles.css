@@ -1,0 +1,18 @@
+#level_body {
+    width:100%;
+    aspect-ratio: 4 / 3;
+
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #04AA6D;
+  }
