@@ -7,20 +7,24 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
-import { Game } from "./Game.js";
-import { ImageStore } from "./utils/rendering/ImageStore.js";
-// Initialize and load, then start the main loop 
-document.addEventListener('DOMContentLoaded', function () {
-    return __awaiter(this, void 0, void 0, function* () {
-        yield loadImages();
-        let game = new Game();
-        window.requestAnimationFrame(() => game.mainLoop());
-    });
-});
-function loadImages() {
-    return __awaiter(this, void 0, void 0, function* () {
-        ImageStore.loadImage('./../assets/images/cobblestone.png', 'cobble');
-    });
+export class ImageStore {
+    // By default, the key is the imgUrl
+    static loadImage(imgUrl, imageKey = imgUrl) {
+        return __awaiter(this, void 0, void 0, function* () {
+            let response = yield fetch(imgUrl);
+            if (!response.ok) {
+                console.error("Failed to load image from url " + imgUrl);
+                return;
+            }
+            let loadedImage = new Image();
+            loadedImage.src = imgUrl;
+            this.nameToImgMap[imageKey] = loadedImage;
+        });
+    }
+    ;
+    static getImage(imageKey) {
+        return this.nameToImgMap[imageKey];
+    }
 }
-;
-//# sourceMappingURL=main.js.map
+ImageStore.nameToImgMap = {};
+//# sourceMappingURL=ImageStore.js.map

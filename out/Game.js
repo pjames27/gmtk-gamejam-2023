@@ -1,5 +1,6 @@
 import { MAIN_CANVAS_ID } from "./gameconstants.js";
 import { MS_PER_GAME_UPDATE } from "./gameconstants.js";
+import { ImageStore } from "./utils/rendering/ImageStore.js";
 export class Game {
     constructor() {
         this.msPreviousTime = performance.now();
@@ -7,7 +8,6 @@ export class Game {
         this.quit = false;
         this.updatedThisFrame = false;
         this.ctx = null;
-        this.counter = 0;
         const canvas = document.getElementById(MAIN_CANVAS_ID);
         this.ctx = canvas.getContext("2d");
     }
@@ -47,10 +47,11 @@ export class Game {
     render() {
         this.ctx.clearRect(0, 0, 1920, 1080);
         this.ctx.fillStyle = "#0000FF";
-        this.ctx.font = "48px serif";
-        this.ctx.fillText("Hello world", 100, 50);
-        this.ctx.font = "12px serif";
-        this.ctx.fillText("Hello world", 200, 50);
+        //this.ctx.font = "48px serif";
+        //this.ctx.fillText("Hello world", 100, 50);
+        //this.ctx.font = "12px serif";
+        //this.ctx.fillText("Hello world", 200, 50);
+        this.ctx.drawImage(ImageStore.getImage('cobble'), 400, 400, 60, 60);
         this.ctx.fillRect(0, 0, 100, 200);
     }
 }
