@@ -1,4 +1,4 @@
-import { Game } from "./Game";
+import { Game } from "./Game.js";
 // Initialize and load, then start the main loop 
 document.addEventListener('DOMContentLoaded', function () {
     let game = new Game();
