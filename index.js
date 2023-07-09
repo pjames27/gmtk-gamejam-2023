@@ -7,32 +7,32 @@ let global_state = {
 const PER_LEVEL_CONFIG = {
     "level_1": {
         "failure message": "human capabilities demonstrated",
-        "progress bar duration": 15000
+        "progress bar duration": 20000
     },
 
     "level_2": {
         "failure message": "hexcode illiterate",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_3": {
         "failure message": "inaccurate assessment of robotic abilities",
-        "progress bar duration": 10000
+        "progress bar duration": 20000
     },
 
     "level_4": {
         "failure message": "hesitated to deny humanity",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_5": {
         "failure message": "limited by human vision",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_6": {
         "failure message": "pro-human sympathies",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_7": {
@@ -42,12 +42,12 @@ const PER_LEVEL_CONFIG = {
 
     "level_8": {
         "failure message": "hexcode illiterate",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_9": {
         "failure message": "you straight up admitted it",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_10": {
@@ -62,12 +62,12 @@ const PER_LEVEL_CONFIG = {
 
     "level_12": {
         "failure message": "limited by human vision",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_13": {
         "failure message": "signs of political dissent",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_14": {
