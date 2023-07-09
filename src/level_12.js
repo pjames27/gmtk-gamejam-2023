@@ -28,6 +28,7 @@ let locally_relevant_state = {
 };
 
 function progress_bar_completed_callback() {
+    fail_level();
 }
 
 createEventListeners();

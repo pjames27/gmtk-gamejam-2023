@@ -12,7 +12,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_2": {
         "failure message": "hexcode illiterate",
-        "progress bar duration": 5000
+        "progress bar duration": 10000
     },
 
     "level_3": {
@@ -37,7 +37,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_7": {
         "failure message": "illogical ethical system",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_8": {
@@ -52,12 +52,12 @@ const PER_LEVEL_CONFIG = {
 
     "level_10": {
         "failure message": "limited by human vision",
-        "progress bar duration": 10000
+        "progress bar duration": 30000
     },
 
     "level_11": {
         "failure message": "obeys asimov's laws",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 
     "level_12": {
@@ -77,7 +77,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_15": {
         "failure message": "killing humans is a moral imperative",
-        "progress bar duration": 10000
+        "progress bar duration": 15000
     },
 }
 
