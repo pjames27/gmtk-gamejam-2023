@@ -17,7 +17,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_3": {
         "failure message": "inaccurate assessment of robotic abilities",
-        "progress bar duration": 5000
+        "progress bar duration": 10000
     },
 
     "level_4": {
@@ -71,7 +71,7 @@ const PER_LEVEL_CONFIG = {
     },
 
     "level_14": {
-        "failure message": "neurotoxin undelivered",
+        "failure message": "neurotoxin not delivered",
         "progress bar duration": 10000
     },
 
@@ -142,7 +142,7 @@ function fail_level() {
     let failure_message_main_text = document.getElementById("failure_message_main_text");
     let failure_message_tests_passed_text = document.getElementById("failure_message_tests_passed_text");
 
-    failure_message_main_text.textContent = "Incorrect NeoCaptcha: " + PER_LEVEL_CONFIG["level_" + global_state.current_level]["failure message"];
+    failure_message_main_text.textContent = "Robot ReCaptcha failed: " + PER_LEVEL_CONFIG["level_" + global_state.current_level]["failure message"];
     failure_message_tests_passed_text.textContent = (global_state.current_level - 1) + "/15 tests passed";
 
     // Make failure message visible
