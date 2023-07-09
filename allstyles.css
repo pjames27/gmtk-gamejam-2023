@@ -1,5 +1,5 @@
 body {
-  /* margin: 0; */
+  margin: 0;
   color: var(--open-ai-open-aibg, #343540);
   text-align: left;
   font-family: Arial;
@@ -12,7 +12,6 @@ body {
 
 #game {
   margin: auto;
-  padding-top: 200px;
   /* margin-top: 10%; */
   width: 960px;
   height: 720px;
@@ -82,79 +81,80 @@ body {
 }
 
 #failure_message_header {
-    color: var(--captcha-text-light, #FFF);
-    text-align: center;
-    font-family: Roboto Mono;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: var(--captcha-text-light, #FFF);
+  text-align: center;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #failure_message_body {
-    display: flex;
-    padding: 19px 20px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex: 1 0 0;
-    align-self: stretch;
+  display: flex;
+  padding: 19px 20px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  align-self: stretch;
 
-    border-radius: 2px;
-    border: 1px solid #FFF;
-    background: #E9E7D8;
+  border-radius: 2px;
+  border: 1px solid #FFF;
+  background: #E9E7D8;
 }
 
 #failure_message_main_text {
-    display: flex;
-    flex-direction: column;
-    align-self: stretch;
-    color: #000;
-    font-family: Roboto Mono;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: #000;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 #failure_message_tests_passed_text {
-    color: var(--captcha-text-dark, #000);
-    text-align: center;
-    font-family: Roboto Mono;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  color: var(--captcha-text-dark, #000);
+  text-align: center;
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 #failure_message_restart_button {
-    display: flex;
-    padding: 10px 16px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 
-    background: var(--captcha-red, #D54642);
+  background: var(--captcha-red, #D54642);
 
-    color: var(--captcha-text-light, #FFF);
-    text-align: center;
-    text-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.25);
-    font-family: Roboto Mono;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: var(--captcha-text-light, #FFF);
+  text-align: center;
+  text-shadow: 0px 0.5px 0.5px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto Mono;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 #content {
-  margin-top: 50px;
+  top: 100px;
+  height: 520px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 360px;
-  padding-bottom: 10px;
+  justify-content: center;
   position: relative;
 }
 
