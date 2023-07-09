@@ -14,9 +14,14 @@ const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 
 
 let locally_relevant_state = {
+    ignore_timeout: false
 };
 
 function progress_bar_completed_callback() {
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL N");
+    if (locally_relevant_state["ignore_timeout"]) {
+        return;
+    }
     fail_level();
 }
 
@@ -28,7 +33,7 @@ function level_exit_callback() {
 
 function createEventListeners() {
     // Example
-    document.getElementById("pull-lever").addEventListener("click", (event) => set_level(15));
+    document.getElementById("pull-lever").addEventListener("click", (event) => end_game());
     document.getElementById("do-nothing").addEventListener("click", (event) => fail_level());
 }
 
@@ -40,3 +45,8 @@ function removeEventListeners() {
 //==============================================================================
 // Event handlers
 //==============================================================================
+
+function end_game() {
+    locally_relevant_state["ignore_timeout"] = true;
+    win_game();
+}

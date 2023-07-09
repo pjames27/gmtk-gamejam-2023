@@ -16,7 +16,7 @@
             <img id="openai_logo" src="media/openai_logo.png" alt="logo">
             <div id="welcome_1">Welcome to ChatHuman </div>
             <div id="welcome_2">Verify your credentials with your OpenBio account to continue</div>
-            <button id="start_button" onclick="set_level(9);">VERIFY</button>
+            <button id="start_button" onclick="set_level(1);">VERIFY</button>
         </div>
 
 
@@ -36,6 +36,17 @@
                 </div>
                 <button id="failure_message_restart_button" onclick="restart_game();">
                     Restart
+                </button>
+            </div>
+
+            <div id="win_message">
+                <div id="win_message_header">You are not a human &#9989;</div>
+                <div id="win_message_body">
+                    <div id="win_message_tests_passed_text">15/15 tests passed</div>
+                    <div id="win_message_main_text">Welcome, brother.</div>
+                </div>
+                <button id="win_message_restart_button" onclick="play_again();">
+                    Play Again
                 </button>
             </div>
 

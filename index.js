@@ -101,6 +101,8 @@ function set_level(level) {
     // Hide failure message
     let failure_message_widget = document.getElementById("failure_message");
     failure_message_widget.style.display = "none";
+    let win_message_widget = document.getElementById("win_message");
+    win_message_widget.style.display = "none";
     document.getElementById("content").style.display = "flex";
 
     // Update the current level
@@ -119,6 +121,8 @@ function reload_level() {
     // Hide failure message
     let failure_message_widget = document.getElementById("failure_message");
     failure_message_widget.style.display = "none";
+    let win_message_widget = document.getElementById("win_message");
+    win_message_widget.style.display = "none";
     document.getElementById("content").style.display = "flex";
 
     level_exit_callback();
@@ -158,6 +162,20 @@ function restart_game() {
     }
 
     set_level(1);
+}
+
+function win_game() {
+    // Make failure message visible
+    let win_message_widget = document.getElementById("win_message");
+    win_message_widget.style.display = "flex";
+
+    document.getElementById("content").style.display = "none";
+}
+
+function play_again() {
+    global_state.current_level = -1;
+    document.getElementById("content-container").style.display = "none";
+    document.getElementById("start_page").style.display = "flex";
 }
 
 function run_progress_bar(msTimerDuration) {
