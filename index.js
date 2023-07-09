@@ -4,25 +4,25 @@ let global_state = {
     current_level: -1
 };
 
-const PER_LEVEL_PROGRESS_BAR = {
-    "level_0": {
-        "duration": 200
-    },
-
+const PER_LEVEL_CONFIG = {
     "level_1": {
-        "duration": 1000
+        "failure message": "impossible skills",
+        "progress bar duration": 1000
     },
 
     "level_2": {
-        "duration": 2000
+        "failure message": "impossible skills",
+        "progress bar duration": 2000
     },
 
     "level_3": {
-        "duration": 5000
+        "failure message": "impossible skills",
+        "progress bar duration": 5000
     },
 
     "level_4": {
-        "duration": 10000
+        "failure message": "impossible skills",
+        "progress bar duration": 10000
     },
 }
 
@@ -40,6 +40,10 @@ function set_level(level) {
         level_exit_callback();
     }
 
+    // Hide failure message
+    let failure_message_widget = document.getElementById("failure_message");
+    failure_message_widget.style.display = "none";
+
     // Update the current level
     global_state.current_level = level;
 
@@ -48,27 +52,48 @@ function set_level(level) {
         $("#level_body").load("level_" + level + ".html");
     }).ready(() => {
         // Start the progress bar
-        window.requestAnimationFrame(() => { run_progress_bar(PER_LEVEL_PROGRESS_BAR["level_" + level]["duration"]) });
+        window.requestAnimationFrame(() => {run_progress_bar(PER_LEVEL_CONFIG["level_"+level]["progress bar duration"])});
     });
 }
 
 function reload_level() {
-    $(function () {
-        $("#level_body").load("level_" + global_state.current_level + ".html");
-    }).ready(() => {
-        window.requestAnimationFrame(() => { run_progress_bar(PER_LEVEL_PROGRESS_BAR["level_" + global_state.current_level]["duration"]) });
-    });
+    // Hide failure message
+    let failure_message_widget = document.getElementById("failure_message");
+    failure_message_widget.style.display = "none";
+
+    level_exit_callback();
+
+    //let level_body = document.getElementById("level_body");
+    //level_body.style.pointerEvents = true;
+
+    $(function() {
+        $("#level_body").load("level_" + global_state.current_level+".html");
+     }).ready(() => {
+        window.requestAnimationFrame(() => {run_progress_bar(PER_LEVEL_CONFIG["level_"+global_state.current_level]["progress bar duration"])});
+     });
 }
 
-function fail_level() {
-    let level_body = document.getElementById("level_body");
-    level_body.style.pointerEvents = false;
+
+function fail_level(){
+    let failure_message_main_text = document.getElementById("failure_message_main_text");
+    let failure_message_tests_passed_text = document.getElementById("failure_message_tests_passed_text");
+    
+    failure_message_main_text.textContent = "Incorrect NeoCaptcha: " + PER_LEVEL_CONFIG["level_" + global_state.current_level]["failure message"];
+    failure_message_tests_passed_text.textContent = (global_state.current_level - 1) + "/15 tests passed";
+    
+    // Make failure message visible
+    let failure_message_widget = document.getElementById("failure_message");
+    failure_message_widget.style.display = "flex";
 }
 
-// Initialize the page
-//document.addEventListener('DOMContentLoaded', function () {    
-//run_progress_bar();
-//});
+function restart_game() {
+    if (global_state.current_level === 1) {
+        reload_level();
+        return;
+    }
+
+    set_level(1);
+}
 
 function run_progress_bar(msTimerDuration) {
     const pxWindowWidth = window.innerWidth;

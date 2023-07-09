@@ -4,7 +4,7 @@
 <head>
     <title>GMTK Game Jam 2023</title>
     <script src="./jquery.min.js"></script>
-    <script src="./index.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
     <link rel="stylesheet" href="allstyles.css">
 </head>
 
@@ -19,10 +19,19 @@
 
             <div id="level_body"></div>
 
-
-            <div id="failure_message"></div>
+            <div id="failure_message">
+                <div id="failure_message_header">Human Detected &#128680;</div>
+                <div id="failure_message_body">
+                    <div id="failure_message_main_text">Incorrect NeoCaptcha: impossible skills</div>
+                    <div id="failure_message_tests_passed_text">1/15 tests passed</div>
+                </div>
+                <button id="failure_message_restart_button" onclick="restart_game();">
+                    Restart
+                </button>
+            </div>
         </div>
     </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>

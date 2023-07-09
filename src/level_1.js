@@ -22,12 +22,14 @@ let level_1_local_state = {
 createEventListeners();
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 1")
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 1");
 }
 
 function level_exit_callback() {
     level_1_local_state = {
     };
+
+    document.getElementById(TEXT_INPUT_ID).value = "";
 
     removeEventListeners();
 }
@@ -52,8 +54,7 @@ function verifyButtonListener(event) {
 
     if (textInputWidget.value.toLowerCase() === FUZZY_TEXT_STRING) {
         console.log("Failure");
-        let failure_message_widget = document.getElementById("failure_message");
-        failure_message_widget.style.display = "block";
+        fail_level();
         return;
     }
 
