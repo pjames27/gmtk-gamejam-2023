@@ -28,8 +28,8 @@ function level_exit_callback() {
 
 function createEventListeners() {
     // Example
-    document.getElementById("pull-lever").addEventListener("click", (event) => fail_level());
-    document.getElementById("do-nothing").addEventListener("click", (event) => set_level(8));
+    document.getElementById("pull-lever").addEventListener("click", (event) => set_level(8));
+    document.getElementById("do-nothing").addEventListener("click", (event) => fail_level());
 }
 
 function removeEventListeners() {
