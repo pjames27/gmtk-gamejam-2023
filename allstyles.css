@@ -213,6 +213,11 @@ body {
   font-weight: 700;
 }
 
+.puzzle-captcha-head .text-hex {
+  color: #D54642;
+  background-color: #FFF;
+}
+
 .puzzle-captcha-body {
   width: 340px;
   height: 340px;

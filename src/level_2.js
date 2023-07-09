@@ -21,7 +21,10 @@ const correct_state = {
 
 
 let locally_relevant_state = {
-
+    1: false,
+    2: false,
+    3: false,
+    4: false,
 };
 
 function progress_bar_completed_callback() {
@@ -70,6 +73,7 @@ function toggle_select(n) {
 }
 
 function verify(event) {
+    console.log(locally_relevant_state);
     for (let i = 1; i <= 4; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
             return;
