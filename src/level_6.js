@@ -4,9 +4,21 @@
 // Begin Element IDs
 //=================================================================================
 
-const LEVEL_ID_PREFIX = "level_3_";
+const LEVEL_ID_PREFIX = "level_6_";
 
 const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
+
+const correct_state = {
+    1: true,
+    2: true,
+    3: false,
+    4: true,
+    5: false,
+    6: false,
+    7: true,
+    8: false,
+    9: true,
+}
 
 //=================================================================================
 // End Element IDs
@@ -14,7 +26,15 @@ const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 
 
 let locally_relevant_state = {
-
+    1: false,
+    2: false,
+    3: false,
+    4: false,
+    5: false,
+    6: false,
+    7: false,
+    8: false,
+    9: false,
 };
 
 function progress_bar_completed_callback() {
@@ -69,10 +89,11 @@ function toggle_select(n) {
 }
 
 function verify(event) {
+    console.log(locally_relevant_state);
     for (let i = 1; i <= 9; i++) {
-        if (!(i in locally_relevant_state) | (locally_relevant_state[i] == false)) {
+        if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
             return;
         }
     }
-    set_level(4);
+    set_level(7);
 }
