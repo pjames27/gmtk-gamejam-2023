@@ -5,8 +5,8 @@
 
 const LEVEL_ID_PREFIX = "level_1_";
 
-const TEXT_INPUT_ID = LEVEL_ID_PREFIX + "text_input"; 
-const VERIFY_BUTTON_ID = LEVEL_ID_PREFIX + "verify_button"; 
+const TEXT_INPUT_ID = LEVEL_ID_PREFIX + "text_input";
+const VERIFY_BUTTON_ID = LEVEL_ID_PREFIX + "verify_button";
 
 //=================================================================================
 // End Element IDs
@@ -23,6 +23,7 @@ createEventListeners();
 
 function progress_bar_completed_callback() {
     console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 1");
+    fail_level();
 }
 
 function level_exit_callback() {
