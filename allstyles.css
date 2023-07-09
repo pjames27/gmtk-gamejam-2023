@@ -71,10 +71,14 @@ body {
 #failure_message {
   position: absolute;
   top: 0;
-  background-color: red;
-  width: 100%;
-  height: 100%;
-  display: none;
+
+  width: 440px;
+  height: 262px;
+  padding: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 19px;
+  background: #0056E4;
 }
 
 #failure_message_header {
