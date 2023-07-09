@@ -7,7 +7,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  background-color: var(--captcha-grey, #BEBEBE);
+  background-color: var(--bg-grey, #202124);
 }
 
 #game {
