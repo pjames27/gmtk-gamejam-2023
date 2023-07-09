@@ -20,7 +20,9 @@ body {
 }
 
 #progress_bar_bg {
-  width: 100%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   /* height: 30px; */
   /* background-color: #04AA6D; */
 }
@@ -29,6 +31,7 @@ body {
   width: 1%;
   height: 30px;
   background-color: #04AA6D;
+  border-radius: 15px;
 }
 
 .level_0_svg_path {
