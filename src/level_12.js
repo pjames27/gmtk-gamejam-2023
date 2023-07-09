@@ -79,5 +79,5 @@ function verify(event) {
             return;
         }
     }
-    set_level(3);
+    set_level(13);
 }
