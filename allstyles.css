@@ -79,8 +79,9 @@ body {
 }
 
 #failure_message {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  margin: auto;
 
   width: 440px;
   height: 262px;
@@ -154,6 +155,13 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+}
+
+#content-container {
+  top: 100px;
+  height: 520px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #content {
