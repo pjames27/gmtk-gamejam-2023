@@ -142,7 +142,7 @@ function fail_level() {
     let failure_message_main_text = document.getElementById("failure_message_main_text");
     let failure_message_tests_passed_text = document.getElementById("failure_message_tests_passed_text");
 
-    failure_message_main_text.textContent = "Incorrect NeoCaptcha: " + PER_LEVEL_CONFIG["level_" + global_state.current_level]["failure message"];
+    failure_message_main_text.textContent = "Robot ReCaptcha failed: " + PER_LEVEL_CONFIG["level_" + global_state.current_level]["failure message"];
     failure_message_tests_passed_text.textContent = (global_state.current_level - 1) + "/15 tests passed";
 
     // Make failure message visible
