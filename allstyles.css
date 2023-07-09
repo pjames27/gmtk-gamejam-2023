@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  /* margin: 0; */
   color: var(--open-ai-open-aibg, #343540);
   text-align: left;
   font-family: Arial;
@@ -11,9 +11,9 @@ body {
 }
 
 #game {
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%; */
+  margin: auto;
+  padding-top: 200px;
+  /* margin-top: 10%; */
   width: 960px;
   height: 720px;
   background-image: url('media/background.png');
