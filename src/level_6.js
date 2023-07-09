@@ -35,9 +35,13 @@ let locally_relevant_state = {
     7: false,
     8: false,
     9: false,
+    ignore_timeout: false
 };
 
 function progress_bar_completed_callback() {
+    if (locally_relevant_state["ignore_timeout"]) {
+        return;
+    }
     fail_level();
 }
 
@@ -91,6 +95,8 @@ function verify(event) {
     //console.log(locally_relevant_state);
     for (let i = 1; i <= 9; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
+            locally_relevant_state["ignore_timeout"] = true;
+            fail_level();
             return;
         }
     }

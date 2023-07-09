@@ -14,10 +14,13 @@ const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 
 
 let locally_relevant_state = {
-
+    ignore_timeout: false,
 };
 
 function progress_bar_completed_callback() {
+    if (locally_relevant_state["ignore_timeout"]) {
+        return;
+    }
     fail_level();
 }
 
@@ -70,6 +73,8 @@ function toggle_select(n) {
 function verify(event) {
     for (let i = 1; i <= 9; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] == false)) {
+            locally_relevant_state["ignore_timeout"] = true;
+            fail_level();
             return;
         }
     }
