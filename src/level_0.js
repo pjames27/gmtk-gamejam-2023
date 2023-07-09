@@ -50,7 +50,7 @@ function createEventListeners() {
 
 function removeEventListeners() {
     document.removeEventListener("mousedown", handleMouseDownSVG);
-    document.removeEventListenerEventListener("mousemove", handleMouseMoveSVG);
+    document.removeEventListener("mousemove", handleMouseMoveSVG);
 }
 
 function handleMouseDownSVG(event) {
