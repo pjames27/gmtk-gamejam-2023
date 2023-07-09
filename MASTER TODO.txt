@@ -1,0 +1,12 @@
+- Set timer durations for all levels
+- Set progress bar callbacks for all levels
+
+
+Complete levels:
+- 7
+- 9
+- 10
+- 11
+- 13
+- 14
+- 15
