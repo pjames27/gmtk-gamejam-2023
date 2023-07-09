@@ -6,7 +6,7 @@ let global_state = {
 
 const PER_LEVEL_CONFIG = {
     "level_1": {
-        "failure message": "human skills demonstrated",
+        "failure message": "human abilities demonstrated",
         "progress bar duration": 15000
     },
 
@@ -181,7 +181,7 @@ function play_again() {
 function run_progress_bar(msTimerDuration) {
     // const pxWindowWidth = window.innerWidth;
     const pxWindowWidth = document.getElementById("progress_bar_bg").clientWidth;
-    console.log(pxWindowWidth);
+    //console.log(pxWindowWidth);
     const msInterval = msTimerDuration / 200;
     const pxAddtlWidth = pxWindowWidth / 200;
 

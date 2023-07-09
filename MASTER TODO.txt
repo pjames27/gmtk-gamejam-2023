@@ -1,5 +1,20 @@
 - Set timer durations for all levels
 	- 30 seconds for level 1
-- Set progress bar callbacks for all levels
-- Link each level to the next
-- Add winning page
+	- increase timer for level 14
+
+- Make failing send you back 1 level
+	- test beginning
+
+- Change the correct answer on number 12
+
+- Change timeout for levels with checkboxes
+	- 4
+	- 13
+
+- Make verify on grids cause the person to fail
+2
+3
+6
+8
+12
+

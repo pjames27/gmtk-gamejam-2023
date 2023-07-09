@@ -55,8 +55,8 @@ function removeEventListeners() {
 function toggle_select(n) {
     console.log(n);
     let frame = document.getElementById("fr-" + String(n));
-    console.log("fr-" + String(n));
-    console.log(frame);
+    //console.log("fr-" + String(n));
+    //console.log(frame);
     if (frame.style.display === "none") {
         frame.style.display = "block";
         locally_relevant_state[n] = true;

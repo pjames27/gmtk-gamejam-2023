@@ -75,8 +75,8 @@ function removeEventListeners() {
 function toggle_select(n) {
     console.log(n);
     let frame = document.getElementById("fr-" + String(n));
-    console.log("fr-" + String(n));
-    console.log(frame);
+    //console.log("fr-" + String(n));
+    //console.log(frame);
     if (frame.style.display === "none") {
         frame.style.display = "block";
         locally_relevant_state[n] = true;
@@ -88,11 +88,26 @@ function toggle_select(n) {
 }
 
 function verify(event) {
-    console.log(locally_relevant_state);
+    //console.log(locally_relevant_state);
+    let failed = false;
+    let zuck_selected = false;
     for (let i = 1; i <= 9; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
-            return;
+            failed = true;
+            if (locally_relevant_state[8] === true) {
+                zuck_selected = true;
+            }
         }
+    }
+
+    if (failed) {
+        fail_level();
+        if (zuck_selected) {
+            let failure_message_main_text = document.getElementById("failure_message_main_text");
+
+            failure_message_main_text.textContent = "Robot ReCaptcha failed: fooled by our sleeper agent";
+        }
+        return;
     }
     set_level(15);
 }

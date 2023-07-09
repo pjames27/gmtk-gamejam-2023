@@ -60,8 +60,8 @@ function removeEventListeners() {
 function toggle_select(n) {
     console.log(n);
     let frame = document.getElementById("fr-" + String(n));
-    console.log("fr-" + String(n));
-    console.log(frame);
+    //console.log("fr-" + String(n));
+    //console.log(frame);
     if (frame.style.display === "none") {
         frame.style.display = "block";
         locally_relevant_state[n] = true;
@@ -73,7 +73,7 @@ function toggle_select(n) {
 }
 
 function verify(event) {
-    console.log(locally_relevant_state);
+    //console.log(locally_relevant_state);
     for (let i = 1; i <= 4; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
             return;

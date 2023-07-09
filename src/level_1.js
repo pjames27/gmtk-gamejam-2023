@@ -23,6 +23,10 @@ createEventListeners();
 
 function progress_bar_completed_callback() {
     fail_level();
+
+    let failure_message_main_text = document.getElementById("failure_message_main_text");
+
+    failure_message_main_text.textContent = "Robot ReCaptcha failed: only a human could be so indecisive";
 }
 
 function level_exit_callback() {
@@ -53,7 +57,6 @@ function verifyButtonListener(event) {
     let textInputWidget = document.getElementById(TEXT_INPUT_ID);
 
     if (textInputWidget.value.toLowerCase() === FUZZY_TEXT_STRING) {
-        console.log("Failure");
         fail_level();
         return;
     }
