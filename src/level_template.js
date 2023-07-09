@@ -16,32 +16,19 @@ const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 let locally_relevant_state = {
 };
 
-
-// Initialize the page
-document.addEventListener('DOMContentLoaded', function () {    
-    // Initialize elements (setting defaults, etc.)
-    local_initialization_function();
-
-    // Update based on current locally_relevant_state
-    local_update_function();
-    
-    // Create event listeners once everything is initialized
-    createEventListeners();
-});
-
-function local_initialization_function() {
-
-};
-
-function local_update_function() {
-};
-
-
+function level_exit_callback() {
+    removeEventListeners();
+}
 
 function createEventListeners() {
     // Example
     document.getElementById(ID_OF_LEVEL_ELEM).addEventListener("click", (event) => handleEventOfChoice(event, ID_OF_LEVEL_ELEM));
 }
+
+function removeEventListeners() {
+
+}
+
 
 //==============================================================================
 // Event handlers
