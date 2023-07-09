@@ -1,10 +1,11 @@
 - Set timer durations for all levels
+	- 30 seconds for level 1
 - Set progress bar callbacks for all levels
+- Link each level to the next
+- Add winning page
 
 
 Complete levels:
-- 7
-- 9
 - 10
 - 11
 - 13
