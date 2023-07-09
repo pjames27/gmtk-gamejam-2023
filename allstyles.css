@@ -10,26 +10,34 @@ body {
   background-color: var(--captcha-grey, #BEBEBE);
 }
 
+#game {
+  position: relative;
+  margin: auto;
+  /* margin-top: 10%; */
+  width: 960px;
+  height: 720px;
+  background-image: url('media/background.png');
+}
 
-#start_page{
+#start_page {
   display: flex;
   width: 412px;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   position: absolute;
-  right: 274px;
-  bottom: 500px;
+  left: 274px;
+  bottom: 300px;
 
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 
 
   /* border-top: 100px; */
 
 }
 
-#openai_logo{
+#openai_logo {
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -37,7 +45,7 @@ body {
   width: 80px;
 }
 
-#welcome_1{
+#welcome_1 {
   color: var(--open-ai-open-ai-text, #ECECF1);
   text-align: center;
   font-family: Arial;
@@ -47,7 +55,7 @@ body {
   line-height: normal;
 }
 
-#welcome_2{
+#welcome_2 {
   display: flex;
   flex-direction: column;
   align-self: stretch;
@@ -60,7 +68,7 @@ body {
   line-height: normal;
 }
 
-#start_button{
+#start_button {
   display: flex;
   padding: 10px 16px;
   justify-content: center;
@@ -77,18 +85,11 @@ body {
   /* cursor: pointer; */
   outline: inherit;
   border-radius: 5px;
+  font-weight: bold;
 }
 
-#start_button:hover{
+#start_button:hover {
   background: var(--captcha-green, #2e8f57);
-}
-
-#game {
-  margin: auto;
-  /* margin-top: 10%; */
-  width: 960px;
-  height: 720px;
-  background-image: url('media/background.png');
 }
 
 #progress_bar_bg {
@@ -231,6 +232,7 @@ body {
 }
 
 #content-container {
+  position: relative;
   top: 100px;
   height: 520px;
   margin-left: auto;
@@ -238,7 +240,7 @@ body {
 }
 
 #content {
-  top: 100px;
+  /* top: 100px; */
   height: 520px;
   margin-left: auto;
   margin-right: auto;
