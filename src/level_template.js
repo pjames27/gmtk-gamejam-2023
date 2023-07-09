@@ -16,6 +16,10 @@ const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 let locally_relevant_state = {
 };
 
+function progress_bar_completed_callback() {
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL N")
+}
+
 function level_exit_callback() {
     removeEventListeners();
 }
