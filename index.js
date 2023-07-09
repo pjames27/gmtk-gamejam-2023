@@ -17,7 +17,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_3": {
         "failure message": "inaccurate assessment of robotic abilities",
-        "progress bar duration": 5000
+        "progress bar duration": 10000
     },
 
     "level_4": {
@@ -71,7 +71,7 @@ const PER_LEVEL_CONFIG = {
     },
 
     "level_14": {
-        "failure message": "neurotoxin undelivered",
+        "failure message": "neurotoxin not delivered",
         "progress bar duration": 10000
     },
 
