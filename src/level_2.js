@@ -1,3 +1,7 @@
+function progress_bar_callback() {
+    console.log("PROGRESS BAR CALLBACK - LEVEL 2")
+}
+
 function check(){
     let a = document.getElementById("vehicle1");
     let b = document.getElementById("vehicle2");

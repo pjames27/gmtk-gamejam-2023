@@ -14,11 +14,11 @@ const PER_LEVEL_PROGRESS_BAR = {
     },
     
     "level_2": {
-        "duration": 20000
+        "duration": 2000
     },
     
     "level_3": {
-        "duration": 50000
+        "duration": 5000
     },
     
     "level_4": {
@@ -82,13 +82,19 @@ function run_progress_bar(msTimerDuration) {
             return;
         }
 
+        // Finished progress bar
         if (width >= window.innerWidth) {
             clearInterval(intervalId);
             elem.style.width = window.innerWidth + "px";
             console.log("Cleared id " + intervalId);
+            
             // Reset the id of the running progress bar
             global_state.running_progress_bar_interval_id = -1;
-        } else {
+
+            progress_bar_callback();
+        }
+        // Continue progressing the bar 
+        else {
             width += pxAddtlWidth;
             elem.style.width = width + "px";
         }

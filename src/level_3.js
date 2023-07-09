@@ -1,3 +1,7 @@
+function progress_bar_callback() {
+    console.log("PROGRESS BAR CALLBACK - LEVEL 3")
+}
+
 function collide(el1, el2) {
     var rect1 = el1.getBoundingClientRect();
     var rect2 = el2.getBoundingClientRect();
