@@ -47,7 +47,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_9": {
         "failure message": "you straight up admitted it",
-        "progress bar duration": 15000
+        "progress bar duration": 10000
     },
 
     "level_10": {
