@@ -11,11 +11,23 @@
 
 <body>
     <div id="game">
-        <div id="content">
-            <div id="progress_bar_bg">
-                <div id="progress_bar_filler"></div>
+
+        <div id="start_page">
+            <img id="openai_logo" src="media/openai_logo.png" alt="logo">
+            <div id="welcome_1">Welcome to ChatHuman </div>
+            <div id="welcome_2">Verify your credentials with your OpenBio account to continue</div>
+            <button id="start_button" onclick="set_level(1);">Verify</button>
+        </div>
+
+
+        <div id="content-container" style="display:none;">
+            <div id="content">
+                <div id="progress_bar_bg">
+                    <div id="progress_bar_filler"></div>
+                </div>
+                <div id="level_body"></div>
             </div>
-            <div id="level_body"></div>
+
             <div id="failure_message">
                 <div id="failure_message_header">Human Detected &#128680;</div>
                 <div id="failure_message_body">
@@ -26,6 +38,7 @@
                     Restart
                 </button>
             </div>
+
         </div>
     </div>
     <script src="./index.js"></script>
