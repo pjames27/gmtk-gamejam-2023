@@ -7,7 +7,7 @@ let global_state = {
 const PER_LEVEL_CONFIG = {
     "level_1": {
         "failure message": "human skills demonstrated",
-        "progress bar duration": 5000
+        "progress bar duration": 15000
     },
 
     "level_2": {
