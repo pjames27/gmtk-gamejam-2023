@@ -28,7 +28,8 @@ let locally_relevant_state = {
 };
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL N")
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL N");
+    fail_level();
 }
 
 createEventListeners();
@@ -79,5 +80,5 @@ function verify(event) {
             return;
         }
     }
-    set_level(12);
+    set_level(9);
 }
