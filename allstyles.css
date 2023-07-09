@@ -10,6 +10,79 @@ body {
   background-color: var(--captcha-grey, #BEBEBE);
 }
 
+
+#start_page{
+  display: flex;
+  width: 412px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: absolute;
+  right: 274px;
+  bottom: 500px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+
+  /* border-top: 100px; */
+
+}
+
+#openai_logo{
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 80px;
+}
+
+#welcome_1{
+  color: var(--open-ai-open-ai-text, #ECECF1);
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#welcome_2{
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  color: var(--open-ai-open-ai-text, #ECECF1);
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#start_button{
+  display: flex;
+  padding: 10px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: var(--captcha-green, #40B773);
+
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 10px 20px;
+  /* font: inherit; */
+  font-family: Arial;
+  /* cursor: pointer; */
+  outline: inherit;
+  border-radius: 5px;
+}
+
+#start_button:hover{
+  background: var(--captcha-green, #2e8f57);
+}
+
 #game {
   margin: auto;
   /* margin-top: 10%; */

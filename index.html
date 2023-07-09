@@ -12,8 +12,14 @@
 <body>
     <div id="game">
 
+        <div id="start_page">
+            <img id="openai_logo" src="media/openai_logo.png" alt="logo">
+            <div id="welcome_1">Welcome to ChatHuman </div>
+            <div id="welcome_2">Verify your credentials with your OpenBio account to continue</div>
+            <button id="start_button" onclick="set_level(1);">Verify</button>
+        </div>
 
-        <div id="content">
+        <div id="content" style="display:none;">
 
             <div id="level_body"></div>
 
@@ -30,7 +36,7 @@
 
         </div>
 
-        <div id="progress_bar_bg">
+        <div id="progress_bar_bg" style="display:none;">
             <div id="progress_bar_filler"></div>
         </div>
     </div>

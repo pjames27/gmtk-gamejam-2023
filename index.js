@@ -81,9 +81,13 @@ const PER_LEVEL_CONFIG = {
     },
 }
 
-set_level(1);
+// set_level(1);
 
 function set_level(level) {
+
+    document.getElementById("start_page").style.display = "none";
+    document.getElementById("content").style.display = "flex";
+    document.getElementById("progress_bar_bg").style.display = "block";
 
     // Don't set the level to the current level
     if (global_state.current_level === level) {
