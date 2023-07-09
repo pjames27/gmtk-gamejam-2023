@@ -17,7 +17,6 @@ let locally_relevant_state = {
 };
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL N");
     fail_level();
 }
 

@@ -22,7 +22,6 @@ let level_10_local_state = {
 createEventListeners();
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 10");
 }
 
 function level_exit_callback() {

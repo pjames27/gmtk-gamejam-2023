@@ -146,6 +146,9 @@ function fail_level() {
     failure_message_widget.style.display = "flex";
 
     document.getElementById("content").style.display = "none";
+
+    let error_audio = document.getElementById("error_audio");
+    error_audio.play();
 }
 
 function restart_game() {

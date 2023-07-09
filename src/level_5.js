@@ -22,7 +22,6 @@ let level_5_local_state = {
 createEventListeners();
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 1");
     fail_level();
 }
 

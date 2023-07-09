@@ -15,10 +15,11 @@ const CHECKED_IMAGE_ID = LEVEL_ID_PREFIX + "checkbox_check_image";
 
 
 let level_9_local_state = {
+    checkbox_clicked: false,
+    
 };
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 9")
 
     if (level_9_local_state.checkbox_clicked) {
         return;
@@ -29,6 +30,7 @@ function progress_bar_completed_callback() {
 
 function level_exit_callback() {
     level_9_local_state = {
+        checkbox_clicked: false,
     };
 
     removeEventListeners();
@@ -49,5 +51,8 @@ createEventListeners();
 // Event handlers
 //==============================================================================
 function clickCheckBoxHandler(event) {
+
+    level_9_local_state.checkbox_clicked = true;
+
     fail_level();
 }

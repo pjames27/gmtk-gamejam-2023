@@ -19,7 +19,6 @@ let level_13_local_state = {
 };
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 13")
 
     if (level_13_local_state.checkbox_clicked) {
         return;
