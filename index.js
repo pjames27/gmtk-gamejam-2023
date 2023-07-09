@@ -161,7 +161,7 @@ function restart_game() {
         return;
     }
 
-    set_level(1);
+    set_level( Math.max(1, global_state.current_level-1));
 }
 
 function win_game() {

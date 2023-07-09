@@ -24,6 +24,7 @@ createEventListeners();
 function progress_bar_completed_callback() {
     fail_level();
 
+     // Bad form, but here we are
     let failure_message_main_text = document.getElementById("failure_message_main_text");
 
     failure_message_main_text.textContent = "Robot ReCaptcha failed: only a human could be so indecisive";

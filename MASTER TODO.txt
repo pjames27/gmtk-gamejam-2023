@@ -2,14 +2,8 @@
 	- 30 seconds for level 1
 	- increase timer for level 14
 
-- Make failing send you back 1 level
-	- test beginning
 
 - Change the correct answer on number 12
-
-- Change timeout for levels with checkboxes
-	- 4
-	- 13
 
 - Make verify on grids cause the person to fail
 2
