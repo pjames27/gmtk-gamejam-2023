@@ -6,7 +6,7 @@ let global_state = {
 
 const PER_LEVEL_CONFIG = {
     "level_1": {
-        "failure message": "human abilities demonstrated",
+        "failure message": "human capabilities demonstrated",
         "progress bar duration": 15000
     },
 
@@ -72,7 +72,7 @@ const PER_LEVEL_CONFIG = {
 
     "level_14": {
         "failure message": "neurotoxin not delivered",
-        "progress bar duration": 10000
+        "progress bar duration": 20000
     },
 
     "level_15": {

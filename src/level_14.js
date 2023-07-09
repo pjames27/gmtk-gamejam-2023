@@ -35,9 +35,15 @@ let locally_relevant_state = {
     7: false,
     8: false,
     9: false,
+
+    already_failed: false,
 };
 
 function progress_bar_completed_callback() {
+    if (locally_relevant_state.already_failed) {
+        return;
+    }
+
     fail_level();
 }
 
@@ -89,18 +95,17 @@ function toggle_select(n) {
 
 function verify(event) {
     //console.log(locally_relevant_state);
-    let failed = false;
     let zuck_selected = false;
     for (let i = 1; i <= 9; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
-            failed = true;
+            locally_relevant_state.already_failed = true;
             if (locally_relevant_state[8] === true) {
                 zuck_selected = true;
             }
         }
     }
 
-    if (failed) {
+    if (locally_relevant_state.already_failed) {
         fail_level();
         if (zuck_selected) {
             let failure_message_main_text = document.getElementById("failure_message_main_text");

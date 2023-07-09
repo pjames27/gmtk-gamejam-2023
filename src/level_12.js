@@ -9,8 +9,8 @@ const LEVEL_ID_PREFIX = "level_12_";
 const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 
 const correct_state = {
-    1: true,
-    2: false,
+    1: false,
+    2: true,
     3: false,
     4: false,
 }
@@ -25,9 +25,15 @@ let locally_relevant_state = {
     2: false,
     3: false,
     4: false,
+
+    already_failed: false,
 };
 
 function progress_bar_completed_callback() {
+    if (locally_relevant_state.already_failed) {
+        return;
+    }
+
     fail_level();
 }
 
@@ -76,6 +82,8 @@ function verify(event) {
     //console.log(locally_relevant_state);
     for (let i = 1; i <= 4; i++) {
         if (!(i in locally_relevant_state) | (locally_relevant_state[i] != correct_state[i])) {
+            locally_relevant_state.already_failed = true;
+            fail_level();
             return;
         }
     }
