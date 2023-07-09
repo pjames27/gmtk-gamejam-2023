@@ -369,8 +369,8 @@ body {
 }
 
 .puzzle-captcha-head .text {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   align-self: stretch;
   color: var(--captcha-text-light, #FFF);
   font-size: 14px;
