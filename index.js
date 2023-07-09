@@ -30,16 +30,24 @@ set_level(0);
 
 function set_level(level){
     
+    // Don't set the level to the current level
     if (global_state.current_level === level) { 
         return;
     }
 
+    // Reset the level you're leaving
+    if (global_state.current_level !== -1) {
+        level_exit_callback();
+    }
+
+    // Update the current level
     global_state.current_level = level;
 
-    //console.log("Setting level " + level);
+    // Load the level
     $(function() {
         $("#level_body").load("level_" + level+".html");
     }).ready(() => {
+        // Start the progress bar
         window.requestAnimationFrame(() => {run_progress_bar(PER_LEVEL_PROGRESS_BAR["level_"+level]["duration"])});
     });
 }

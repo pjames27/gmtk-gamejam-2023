@@ -1,5 +1,13 @@
+let level_3_local_state = {
+
+}
+
 function progress_bar_completed_callback() {
     console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 3")
+}
+
+function level_exit_callback() {
+
 }
 
 function collide(el1, el2) {
