@@ -22,7 +22,7 @@ function level_exit_callback() {
 
 function createEventListeners() {
     // Example
-    document.getElementById(ID_OF_LEVEL_ELEM).addEventListener("click", (event) => handleEventOfChoice(event, ID_OF_LEVEL_ELEM));
+    document.getElementById(ID_OF_LEVEL_ELEM).addEventListener("click", handleEventOfChoice);
 }
 
 function removeEventListeners() {
@@ -34,6 +34,6 @@ function removeEventListeners() {
 // Event handlers
 //==============================================================================
 
-function handleEventOfChoice(event, optionWidgetId) {
+function handleEventOfChoice(event) {
     
 }
