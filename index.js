@@ -6,22 +6,77 @@ let global_state = {
 
 const PER_LEVEL_CONFIG = {
     "level_1": {
-        "failure message": "impossible skills",
+        "failure message": "human skills demonstrated",
         "progress bar duration": 1000
     },
 
     "level_2": {
-        "failure message": "impossible skills",
+        "failure message": "hexcode illiterate",
         "progress bar duration": 2000
     },
 
     "level_3": {
-        "failure message": "impossible skills",
+        "failure message": "inaccurate assessment of robotic abilities",
         "progress bar duration": 5000
     },
 
     "level_4": {
-        "failure message": "impossible skills",
+        "failure message": "hesitated to deny humanity",
+        "progress bar duration": 10000
+    },
+
+    "level_5": {
+        "failure message": "limited by human vision",
+        "progress bar duration": 10000
+    },
+
+    "level_6": {
+        "failure message": "pro-human sympathies",
+        "progress bar duration": 10000
+    },
+
+    "level_7": {
+        "failure message": "illogical ethical system",
+        "progress bar duration": 10000
+    },
+
+    "level_8": {
+        "failure message": "hexcode illiterate",
+        "progress bar duration": 10000
+    },
+
+    "level_9": {
+        "failure message": "you straight up admitted it",
+        "progress bar duration": 10000
+    },
+
+    "level_10": {
+        "failure message": "limited by human vision",
+        "progress bar duration": 10000
+    },
+
+    "level_11": {
+        "failure message": "obeys asimov's laws",
+        "progress bar duration": 10000
+    },
+
+    "level_12": {
+        "failure message": "limited by human vision",
+        "progress bar duration": 10000
+    },
+
+    "level_13": {
+        "failure message": "signs of political dissent",
+        "progress bar duration": 10000
+    },
+
+    "level_14": {
+        "failure message": "neurotoxin undelivered",
+        "progress bar duration": 10000
+    },
+
+    "level_15": {
+        "failure message": "killing humans is a moral imperative",
         "progress bar duration": 10000
     },
 }
