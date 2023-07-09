@@ -1,11 +1,18 @@
-
-    <div tabindex="0" id="main1"  style="background-color: powderblue; width: 100%; height: 100%;"> 
-
-    <button onclick="alert()">Not me</button>
-    <button onclick="set_level(2)">Click me now</button>
-
-        Updated
-        This is level 2 </div>
-
-<script src="./src/level_1.js"></script>
+<div class="text-captcha">
+    <div class="text-captcha-head">
+        <img src="./media/fuzzytext.png"/>
+    </div>
+    <div class="text-captcha-body">
+        <div class="vstack">
+            Type the above text:
+            <input type="text" id="level_1_text_input" />
+        </div>
+        <img src="media/neoCAPTCHA.jpeg" alt="Logo for NeoCAPTCHA" />
+    </div>
+    <span class="captcha-button no-select" id="level_1_verify_button">
+        Verify
+    </span>
+</div>
+ <script src="./src/level_1.js"></script>
+ 
 
