@@ -61,5 +61,5 @@ function clickCheckBoxHandler(event) {
 
     level_4_local_state.checkbox_clicked = true;
 
-    setTimeout(function() { set_level(5);}, 5000);
+    setTimeout(function() { set_level(14);}, 5000);
 }
