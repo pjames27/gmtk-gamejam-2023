@@ -1,5 +1,5 @@
-function progress_bar_callback() {
-    console.log("PROGRESS BAR CALLBACK - LEVEL 3")
+function progress_bar_completed_callback() {
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 3")
 }
 
 function collide(el1, el2) {

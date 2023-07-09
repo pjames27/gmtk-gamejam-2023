@@ -1,5 +1,5 @@
-function progress_bar_callback() {
-    console.log("PROGRESS BAR CALLBACK - LEVEL 2")
+function progress_bar_completed_callback() {
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 2")
 }
 
 function check(){

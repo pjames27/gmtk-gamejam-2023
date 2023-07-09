@@ -91,7 +91,7 @@ function run_progress_bar(msTimerDuration) {
             // Reset the id of the running progress bar
             global_state.running_progress_bar_interval_id = -1;
 
-            progress_bar_callback();
+            progress_bar_completed_callback();
         }
         // Continue progressing the bar 
         else {
