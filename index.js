@@ -36,7 +36,7 @@ function set_level(level){
 
     global_state.current_level = level;
 
-    console.log("Setting level " + level);
+    //console.log("Setting level " + level);
     $(function() {
         $("#level_body").load("level_" + level+".html");
     }).ready(() => {
@@ -70,7 +70,7 @@ function run_progress_bar(msTimerDuration) {
     let width = 0;
     let elem = document.getElementById("progress_bar_filler");
     let intervalId = setInterval(frame, msInterval);
-    console.log("Set interval id " + intervalId);
+    //console.log("Set interval id " + intervalId);
 
     global_state.running_progress_bar_interval_id = intervalId;
 
@@ -78,7 +78,7 @@ function run_progress_bar(msTimerDuration) {
         // Cancel if started the progress bar again
         if (global_state.running_progress_bar_interval_id !== intervalId) {
             clearInterval(intervalId);
-            console.log("Cleared id " + intervalId);
+            //console.log("Cleared id " + intervalId);
             return;
         }
 
@@ -86,7 +86,7 @@ function run_progress_bar(msTimerDuration) {
         if (width >= window.innerWidth) {
             clearInterval(intervalId);
             elem.style.width = window.innerWidth + "px";
-            console.log("Cleared id " + intervalId);
+            //console.log("Cleared id " + intervalId);
             
             // Reset the id of the running progress bar
             global_state.running_progress_bar_interval_id = -1;
