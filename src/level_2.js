@@ -1,5 +1,13 @@
+let level_2_local_state = {
+
+}
+
 function progress_bar_completed_callback() {
     console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 2")
+}
+
+function level_exit_callback() {
+
 }
 
 function check(){
