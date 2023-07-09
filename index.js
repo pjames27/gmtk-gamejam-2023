@@ -71,7 +71,9 @@ function fail_level() {
 //});
 
 function run_progress_bar(msTimerDuration) {
-    const pxWindowWidth = window.innerWidth;
+    // const pxWindowWidth = window.innerWidth;
+    const pxWindowWidth = document.getElementById("progress_bar_bg").clientWidth;
+    console.log(pxWindowWidth);
     const msInterval = msTimerDuration / 200;
     const pxAddtlWidth = pxWindowWidth / 200;
 
@@ -91,9 +93,9 @@ function run_progress_bar(msTimerDuration) {
         }
 
         // Finished progress bar
-        if (width >= window.innerWidth) {
+        if (width >= pxWindowWidth) {
             clearInterval(intervalId);
-            elem.style.width = window.innerWidth + "px";
+            elem.style.width = pxWindowWidth + "px";
             //console.log("Cleared id " + intervalId);
 
             // Reset the id of the running progress bar

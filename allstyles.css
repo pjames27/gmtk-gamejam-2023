@@ -19,6 +19,12 @@ body {
   background-image: url('media/background.png');
 }
 
+#progress_bar_bg {
+  width: 100%;
+  /* height: 30px; */
+  /* background-color: #04AA6D; */
+}
+
 #progress_bar_filler {
   width: 1%;
   height: 30px;
