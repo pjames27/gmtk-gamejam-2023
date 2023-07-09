@@ -4,7 +4,7 @@
 // Begin Element IDs
 //=================================================================================
 
-const LEVEL_ID_PREFIX = "level_4_";
+const LEVEL_ID_PREFIX = "level_13_";
 
 const CHECKBOX_ID = LEVEL_ID_PREFIX + "checkbox";
 const CHECKED_IMAGE_ID = LEVEL_ID_PREFIX + "checkbox_check_image";
@@ -19,7 +19,7 @@ let level_4_local_state = {
 };
 
 function progress_bar_completed_callback() {
-    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 4")
+    console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 13")
 
     if (level_4_local_state.checkbox_clicked) {
         return;
