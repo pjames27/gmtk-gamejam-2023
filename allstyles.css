@@ -23,7 +23,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   /* height: 30px; */
-  /* background-color: #04AA6D; */
+  background-color: #565766;
+  border-radius: 15px;
+  box-shadow: inset 0 0 10px #656675;
 }
 
 #progress_bar_filler {
