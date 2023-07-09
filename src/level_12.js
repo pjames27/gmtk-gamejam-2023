@@ -4,15 +4,15 @@
 // Begin Element IDs
 //=================================================================================
 
-const LEVEL_ID_PREFIX = "level_2_";
+const LEVEL_ID_PREFIX = "level_12_";
 
 const ID_OF_LEVEL_ELEM = LEVEL_ID_PREFIX + "example_id";
 
 const correct_state = {
-    1: false,
+    1: true,
     2: false,
     3: false,
-    4: true,
+    4: false,
 }
 
 //=================================================================================

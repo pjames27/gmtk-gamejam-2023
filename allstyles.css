@@ -24,15 +24,15 @@ body {
   margin-right: auto;
   /* height: 30px; */
   background-color: #565766;
-  border-radius: 15px;
+  border-radius: 4px;
   box-shadow: inset 0 0 10px #656675;
 }
 
 #progress_bar_filler {
   width: 1%;
-  height: 30px;
-  background-color: #04AA6D;
-  border-radius: 15px;
+  height: 10px;
+  background-color: #BEBEBE;
+  border-radius: 4px;
 }
 
 .level_0_svg_path {
@@ -163,7 +163,7 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   width: 360px;
   justify-content: center;
   position: relative;
