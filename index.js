@@ -4,6 +4,30 @@ let global_state = {
     current_level: -1
 };
 
+const PER_LEVEL_PROGRESS_BAR = {
+    "level_0": {
+        "duration": 200
+    },
+    
+    "level_1": {
+        "duration": 1000
+    },
+    
+    "level_2": {
+        "duration": 20000
+    },
+    
+    "level_3": {
+        "duration": 50000
+    },
+    
+    "level_4": {
+        "duration": 10000
+    },
+}
+
+set_level(0);
+
 function set_level(level){
     
     if (global_state.current_level === level) { 
@@ -15,16 +39,16 @@ function set_level(level){
     console.log("Setting level " + level);
     $(function() {
         $("#level_body").load("level_" + level+".html");
-     }).ready(() => {
-        window.requestAnimationFrame(() => {run_progress_bar(10000)});
-     });
+    }).ready(() => {
+        window.requestAnimationFrame(() => {run_progress_bar(PER_LEVEL_PROGRESS_BAR["level_"+level]["duration"])});
+    });
 }
 
 function reload_level() {
     $(function() {
         $("#level_body").load("level_" + global_state.current_level+".html");
      }).ready(() => {
-        window.requestAnimationFrame(() => {run_progress_bar(10000)});
+        window.requestAnimationFrame(() => {run_progress_bar(PER_LEVEL_PROGRESS_BAR["level_"+global_state.current_level]["duration"])});
      });
 }
 
@@ -32,8 +56,6 @@ function fail_level(){
     let level_body = document.getElementById("level_body");
     level_body.style.pointerEvents = false;
 }
-
-set_level(4);
 
 // Initialize the page
 //document.addEventListener('DOMContentLoaded', function () {    
