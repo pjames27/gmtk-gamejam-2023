@@ -97,15 +97,15 @@ body {
   margin-right: auto;
   /* height: 30px; */
   background-color: #565766;
-  border-radius: 15px;
+  border-radius: 4px;
   box-shadow: inset 0 0 10px #656675;
 }
 
 #progress_bar_filler {
   width: 1%;
-  height: 30px;
-  background-color: #04AA6D;
-  border-radius: 15px;
+  height: 10px;
+  background-color: #BEBEBE;
+  border-radius: 4px;
 }
 
 .level_0_svg_path {
@@ -152,8 +152,9 @@ body {
 }
 
 #failure_message {
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
+  margin: auto;
 
   width: 440px;
   height: 262px;
@@ -229,6 +230,13 @@ body {
   line-height: normal;
 }
 
+#content-container {
+  top: 100px;
+  height: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #content {
   top: 100px;
   height: 520px;
@@ -236,7 +244,7 @@ body {
   margin-right: auto;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   width: 360px;
   justify-content: center;
   position: relative;
