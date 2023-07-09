@@ -14,14 +14,14 @@ const CHECKED_IMAGE_ID = LEVEL_ID_PREFIX + "checkbox_check_image";
 //=================================================================================
 
 
-let level_4_local_state = {
+let level_13_local_state = {
     checkbox_clicked: false,
 };
 
 function progress_bar_completed_callback() {
     console.log("PROGRESS BAR COMPLETED CALLBACK - LEVEL 13")
 
-    if (level_4_local_state.checkbox_clicked) {
+    if (level_13_local_state.checkbox_clicked) {
         return;
     }
 
@@ -29,7 +29,7 @@ function progress_bar_completed_callback() {
 }
 
 function level_exit_callback() {
-    level_4_local_state = {
+    level_13_local_state = {
         checkbox_clicked: false,
     };
 
@@ -59,7 +59,7 @@ function clickCheckBoxHandler(event) {
     checkboxWidget.style.display = "none";
     checkboxCheckImgWidget.style.display = "inline";
 
-    level_4_local_state.checkbox_clicked = true;
+    level_13_local_state.checkbox_clicked = true;
 
     setTimeout(function() { set_level(14);}, 5000);
 }
